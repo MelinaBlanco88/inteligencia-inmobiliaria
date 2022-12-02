@@ -1,0 +1,33 @@
+$vp-small				: 320px;	// small size
+$vp-mid					: 768px;	// mid size
+$vp-large				: 1024px;	// large size
+
+$vp-max					: 1350px;	// max viewport. Syntactically makes for a nicer option
+
+@mixin scale-font($small-ratio: .5, $mid-ratio: .75, $final-size: 1rem) {
+	font-size: $small-ratio * $final-size;
+
+	@include respond-to($vp-mid) { font-size: $mid-ratio * $final-size; }
+	@include respond-to($vp-large) { font-size: $final-size; }
+}
+
+@mixin hover($descriptor: null) {
+	@if $descriptor != null {
+		&:hover, 
+		&:focus,
+		&#{$descriptor} {
+			@content;
+		} 
+	} @else {
+		&:hover, 
+		&:focus {
+			@content;
+		}
+	}
+}
+
+@mixin respond-to($media-min) {
+	@media screen and (min-width: $media-min) {
+		@content;
+	}
+}
