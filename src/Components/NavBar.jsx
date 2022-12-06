@@ -34,7 +34,7 @@ export const NavBar = () => {
 						<Row>
 							<Navbar.Collapse id='basic-navbar-nav'>
 								<Nav className='ms-auto text-center text-md-start'>
-									<Nav.Link href='/#about_us'>Quiénes somos</Nav.Link>
+									<Nav.Link href='/#about_us'>Perfil corporativo</Nav.Link>
 									<Nav.Link href='/#cards'>Servicios</Nav.Link>
 									<Nav.Link href='Propiedades'>Propiedades</Nav.Link>
 									<Nav.Link href='Cursos'>Próximos cursos</Nav.Link>

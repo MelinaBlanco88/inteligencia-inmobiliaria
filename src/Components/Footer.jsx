@@ -26,7 +26,7 @@ export const Footer = () => {
 						<ul className='list-group-group'>
 							<li className='list-group-item'>
 								<a className='text-decoration-none fw-500' href='#about_us'>
-									¿Quienes somos?
+									Perfil corporativo
 								</a>
 							</li>
 							<li className='list-group-item'>
@@ -37,11 +37,6 @@ export const Footer = () => {
 							<li className='list-group-item'>
 								<a className='text-decoration-none fw-500' href='#blog'>
 									Próximos cursos
-								</a>
-							</li>
-							<li className='list-group-item'>
-								<a className='text-decoration-none fw-500' href='#blog'>
-									Blog
 								</a>
 							</li>
 							<li className='list-group-item'>

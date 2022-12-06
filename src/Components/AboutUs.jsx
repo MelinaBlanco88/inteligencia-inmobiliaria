@@ -8,7 +8,7 @@ export const AboutUs = () => {
 				<Row id="about_us" className='flex-center'>
 					<Col sm={12} md={5}>
 						<div className='section-title'>
-							Sobre nosotros
+							Perfil corporativo
 						</div>
 					</Col>
 					<Col sm={12} md={7} className='text-left'>

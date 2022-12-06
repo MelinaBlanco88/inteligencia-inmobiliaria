@@ -118,7 +118,16 @@ export const Servicios = () => {
                                 <Accordion.Item eventKey="5">
                                     <Accordion.Header><FaHandsHelping />Mediación privada</Accordion.Header>
                                     <Accordion.Body>
-                                        ...
+                                        <p>Con la ayuda de diversas herramientas y técnicas de análisis de puntos de vista, comunicación y documentación de acuerdos, incluyendo bases jurídicas aplicables, apoyamos en mediar y conciliar controversias en materia inmobiliaria, ya sea como vendedor o arrendador, así como comprador o arrendatario.</p> 
+
+                                        <p>Como principales beneficios de la mediación o conciliación, nuestros clientes encontrarán: </p>
+                                        <ul>
+                                            <li>Proceso de corto plazo.</li>
+                                            <li>Proceso más económico que un juicio.</li>
+                                            <li>Menor desgaste emocional y de relaciones interpersonales.</li>
+                                            <li>Intervención objetiva, imparcial y confidencial.</li>
+                                            <li>Documentación clara de acuerdos u obligaciones.</li>
+                                        </ul>
                                     </Accordion.Body>
                                 </Accordion.Item>
                             

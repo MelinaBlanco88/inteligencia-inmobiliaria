@@ -31,3 +31,9 @@ $vp-max					: 1350px;	// max viewport. Syntactically makes for a nicer option
 		@content;
 	}
 }
+
+@mixin respond-to-max($media-max) {
+	@media screen and (max-width: $media-max) {
+		@content;
+	}
+}

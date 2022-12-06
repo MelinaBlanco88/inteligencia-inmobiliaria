@@ -317,7 +317,20 @@ a {
             align-items: center;
             gap: 8px;
             width: fit-content;
+            background: #48d366;
+            border: none;
+            transition: .3s ease;
+            @include hover {  background-color: var(--blue); }
         }
+    }
+
+    @include respond-to-max($vp-large) {
+        .content-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn.btn-primary { margin: 0 auto; }
     }
 
     @include respond-to($vp-large) {
@@ -327,6 +340,117 @@ a {
             .card-title {
                 font-size: 2rem;
             }
+        }
+    }
+}
+
+#propiedades {
+    padding: 65px 0 80px 0;
+    gap: 20px 0;
+
+    .card {
+        padding: 15px 25px;
+        border-radius: 12px;
+    
+        .card-img {
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .title-prop {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--blue);
+            font-size: 18px;
+        }
+
+        .address-prop {
+            font-size: 14px;
+            color: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+
+            svg { margin-right: 10px; }
+        }
+
+        .carac-prop {
+            padding: 0 5px;
+            font-size: 12px;
+            text-align: center;
+
+            p { margin: 0; }
+
+            .col-4 {
+                padding: 12px 0;
+                border-right: 1px solid rgba(0,0,0,0.175);
+
+                &:last-child { border: none; }
+            }
+        }
+
+        .price-prop {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--blue);
+        }
+        
+        .btn.btn-primary {
+            background: var(--blue);
+            border-color: var(--blue);
+            border-width: 2px;
+            border-radius: 12px;
+            transition: .3s ease;
+            @include hover {  
+                background-color: var(--white); 
+                color: var(--blue);
+            }
+        }
+    }
+}
+
+#full-contact {
+    #contact {
+        padding: 65px 0 80px 0;
+
+        .content-contact {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            span {  display: block; }
+            .title {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+        .iframe-map {
+            height: 300px;
+            overflow: hidden;
+            border-radius: 12px;
+        } 
+    }
+
+    @include respond-to($vp-large) {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+            width: 25%;
+            top: 0;
+            right: 0;
+            background-color: var(--blue);
+        }
+
+        .iframe-map {
+            height: 460px;
         }
     }
 }
