@@ -56,7 +56,7 @@ export const Footer = () => {
 					</Col>
 				</Row>
 				<Row className='ciudad-creativa'>
-					<p>Sitio desarrollado por: <a href="https://ccreativastudio.com/" target='_blank'>Ciudad Creativa</a></p>
+					<p>Sitio desarrollado por: <a href="https://ccreativastudio.com/" target='_blank' rel='noreferrer'>Ciudad Creativa</a></p>
 				</Row>
 			</Container>
 		</div>

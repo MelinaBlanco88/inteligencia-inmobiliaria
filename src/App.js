@@ -4,26 +4,30 @@ import "./scss/_styles.scss";
 
 import { Whatsapp } from "./Components/Whatsapp";
 import { NavBar } from "./Components/NavBar";
-import { Shuffle } from "./Components/Shuffle";
-import { AboutUs } from "./Components/AboutUs";
-import { Cards } from "./Components/Cards";
-import { Servicios } from "./Components/Servicios";
-import { Testimonios } from "./Components/Testimonios";
-import { Team } from "./Components/Team";
+import { LandingPage } from "./LandingPage";
+import { Cursos } from "./Pages/Cursos";
+import { Propiedades } from "./Pages/Propiedades";
+import { Contacto } from "./Pages/Contacto";
 import { Footer } from "./Components/Footer";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
 		<>
-        <Whatsapp />
-        <NavBar />
-        <Shuffle />
-        <AboutUs />
-        <Cards />
-        <Servicios />
-        <Testimonios />
-        <Team />
-        <Footer />
+        <BrowserRouter>
+          <Whatsapp />
+          <NavBar />
+
+          <Routes>
+              <Route path='/' element={<LandingPage />} />
+              <Route path='/cursos' element={<Cursos />} />
+              <Route path='/propiedades' element={<Propiedades />} />
+              <Route path='/contacto' element={<Contacto />} />
+          </Routes>
+
+          <Footer />
+        </BrowserRouter>
 		</>
 	);
 }
