@@ -14,13 +14,13 @@ export const Footer = () => {
 					<Col md={12} lg={4} className='text-center text-lg-start'>
 						<p><a href="tel:+52 44 2138 4813">+52 44 2138 4813</a></p>
 						<div className="footer-address">
-							<a href="https://goo.gl/maps/ZgE1SJAu5FbfuLaK8" target="_blank">
+							<a rel="noreferrer" href="https://goo.gl/maps/ZgE1SJAu5FbfuLaK8" target="_blank">
 								<p>Lic. Zacarías Oñate 17 Cimatario</p>
 								<p>76030 Santiago de Querétaro, Qro.</p>
 								<p>Querétaro, Mexico</p>
 							</a>
 						</div>
-						<p><a href="mailto:contacto@inteligenciainmobiliaria.mx">contacto@inteligenciainmobiliaria.mx</a></p>
+						<p><a rel="noreferrer" href="mailto:contacto@inteligenciainmobiliaria.mx">contacto@inteligenciainmobiliaria.mx</a></p>
 					</Col>
 					<Col md={6} lg={3} className='text-center text-lg-start'>
 						<ul className='list-group-group'>

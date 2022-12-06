@@ -25,7 +25,7 @@ export const Team = () => {
                         
                             <Row className='team-contact'>
                                 <Col md={12}><FiMail /><a href='mailto:rfavela@inteligenciainmobiliaria.mx'>rfavela@inteligenciainmobiliaria.mx</a></Col>
-                                <Col md={12}><FiPhone /><a href='tel:+52 44 6146 1006'>+52 44 6146 1006</a></Col>
+                                <Col md={12}><FiPhone /><a rel="noreferrer" href='tel:+52 44 6146 1006'>+52 44 6146 1006</a></Col>
                             </Row>
                         </Card.Text>
                         </Card.Body>
@@ -43,7 +43,7 @@ export const Team = () => {
                         
                             <Row className='team-contact'>
                                 <Col md={12}><FiMail /><a href='mailto:lmedelez@inteligenciainmobiliaria.mx'>lmedelez@inteligenciainmobiliaria.mx</a></Col>
-                                <Col md={12}><FiPhone /><a href='tel:+52 44 2138 4813'>+52 44 2138 4813</a></Col>
+                                <Col md={12}><FiPhone /><a rel="noreferrer" href='tel:+52 44 2138 4813'>+52 44 2138 4813</a></Col>
                             </Row>
                         </Card.Text>
                         </Card.Body>
